@@ -11,7 +11,7 @@ object HmrcBuild extends Build {
 
   val appName = "$!APP_NAME!$"
 
-  lazy val $!APP_NAME!$ = (project in file("."))
+  lazy val $!APP_NAME_UNDERSCORE_ONLY!$ = (project in file("."))
     .enablePlugins(SbtAutoBuildPlugin, SbtGitVersioning)
     .settings(
       name := appName,
