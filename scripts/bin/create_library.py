@@ -70,7 +70,7 @@ def initialise_git_repo(folder, project_name):
     call('git init .')
     call('git add . -A')
     call('git commit -m \"Creating new library %s\"' % project_name)
-    call('git remote add origin git@github.com/hmrc/%s.git' % project_name)
+    call('git remote add origin git@github.com:hmrc/%s.git' % project_name)
     call('git tag -a -m\"creating new library\" v0.1.0')
 
 
